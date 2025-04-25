@@ -157,7 +157,7 @@ const ProductTable = () => {
             ) : (
               <TableRow>
                 <TableCell colSpan={4} align="center">
-                  ไม่พบข้อมูลสินค้าddd
+                  ไม่พบข้อมูลสินค้า
                 </TableCell>
               </TableRow>
             )}
@@ -188,8 +188,8 @@ const ProductTable = () => {
           setSelectedProduct(null);
         }}
         onConfirm={() => handleConfirmModal()}
-        title="ยืนยันการลบสินค้า"
-        message="คุณแน่ใจหรือไม่ว่าต้องการลบสินค้านี้?"
+        title=""
+        message={`ต้องการลบข้อมูล รหัสสินค้า ${selectedProduct} หรือไม่ ?`}
       />
     </Box>
   );

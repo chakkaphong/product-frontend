@@ -19,7 +19,7 @@ interface ConfirmDialogProps {
 const ConfirmDialog: React.FC<ConfirmDialogProps> = ({
   open,
   title = "ยืนยันการลบ",
-  message = "คุณแน่ใจหรือไม่ว่าต้องการดำเนินการนี้?",
+  message = `ต้องการลบข้อมูล รหัสสินค้า xxxx-xxxx-xxxx-xxxx หรือไม่ ?`,
   onClose,
   onConfirm,
 }) => {
